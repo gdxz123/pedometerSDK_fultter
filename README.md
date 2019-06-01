@@ -7,7 +7,7 @@
 ### See example projection to get usage method
 
 ## andorid demo
-![andorid demo-w300](https://github.com/gdxz123/pedometerSDK_fultter/blob/master/androidDemo.png?raw=true)
+<img width="300" src="https://github.com/gdxz123/pedometerSDK_fultter/blob/master/androidDemo.png?raw=true"/>
 
 ## iOS demo
-![iOS demo-w300](https://github.com/gdxz123/pedometerSDK_fultter/blob/master/iOSDemo.jpeg?raw=true)
+<img width="300" src="https://github.com/gdxz123/pedometerSDK_fultter/blob/master/iOSDemo.jpeg?raw=tru"/>
