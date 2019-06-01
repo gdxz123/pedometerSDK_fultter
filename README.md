@@ -2,4 +2,6 @@
 
 ### Get user's step count with flutter packages
 
-### avalable with iOS and Android
+### work with iOS and Android
+
+### See example projection to get usage method
