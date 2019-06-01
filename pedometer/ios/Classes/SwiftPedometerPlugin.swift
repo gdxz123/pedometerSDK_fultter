@@ -13,6 +13,15 @@ public class SwiftPedometerPlugin: NSObject, FlutterPlugin {
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         if call.method == "getPlatformVersion" {
             result("iOS " + UIDevice.current.systemVersion)
+        } else if call.method == "initStepCounter" {
+            self.getHealthKitPermission { (isAcceptAuth) in
+                if isAcceptAuth {
+                    result("support")
+                } else {
+                    // no permition
+                    result("-1")
+                }
+            }
         } else if call.method == "getTodayStepCount" {
             self.getHealthKitPermission { (isAcceptAuth) in
                 if isAcceptAuth {

@@ -37,7 +37,7 @@ public class PedometerPlugin implements MethodCallHandler {
         channel.setMethodCallHandler(plugin);
      }
 
-    private String registerSensor() {
+        private String registerSensor() {
         // 注册传感器监听器
         PackageManager pm = this.activity.getPackageManager();
         if(pm.hasSystemFeature(PackageManager.FEATURE_SENSOR_STEP_COUNTER)) {
@@ -46,7 +46,7 @@ public class PedometerPlugin implements MethodCallHandler {
             return "support";
         } else {
             Log.e("Counter-SDK","Counter is not support");
-            return "no support";
+            return "-1"; // not support
         }
     }
 
@@ -56,7 +56,7 @@ public class PedometerPlugin implements MethodCallHandler {
             sensorManager.unregisterListener(stepCounterListener);
             return "support";
         }
-        return "no support";
+        return "-1"; // not support
     }
 
     private String setupStepCounter() {

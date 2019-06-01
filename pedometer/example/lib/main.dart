@@ -81,6 +81,7 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: RaisedButton(
                     color: Color.fromRGBO(128, 195, 255, 1),
+                    child: Text("Get Step Count"),
                     onPressed:  () {
                       setState(() {
                         getTodayStep();
